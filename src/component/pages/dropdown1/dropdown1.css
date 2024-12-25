@@ -1,0 +1,148 @@
+/* Updated dropdown1.css */
+.dropdown-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+.dropdown-container{
+  padding-left: 1200px;
+}
+.d7 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(45deg, #28b8ea, #ffffff, blue);
+  width: 100%; /* Full width to adapt on mobile */
+  max-width: 450px; /* Limit width on large screens */
+  margin: 20px auto;
+  border-radius: 40px;
+  border: solid 2px #838383;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+
+/* Flexbox layout for the dropdown */
+.drop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(rgb(37, 37, 255), white, lightblue);
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  margin-top: 10px;
+  
+}
+
+/* Each list inside the dropdown */
+.drop ul {
+  margin: 20px;
+  padding: 10px;
+  background: linear-gradient(rgb(16, 179, 255), rgb(209, 243, 255));
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 22%; /* Set a fixed width for larger screens */
+}
+
+/* Hover effect on the lists */
+.drop ul:hover {
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.drop ul li {
+  margin: 8px 0;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect on list items */
+.drop ul li:hover {
+  background: #83f1ff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  .d7 {
+    font-size: 20px; /* Adjust font size for tablets */
+    max-width: 400px; /* Limit width */
+  }
+
+  .drop {
+    flex-direction: row;
+    justify-content: space-around; /* Adjust layout for medium screens */
+    padding: 15px;
+  }
+
+  .drop ul {
+    width: 30%; /* Make the lists take up more space on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .d7 {
+    font-size: 18px; /* Adjust font size for tablets */
+    max-width: 350px; /* Limit width */
+  }
+
+  .drop {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .drop ul {
+    width: 90%; /* Make the lists full-width for small screens */
+    margin: 10px 0;
+  }
+
+  .drop ul li {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Increase padding for better touch accessibility */
+  }
+}
+
+@media (max-width: 480px) {
+  .d7 {
+    font-size: 16px; /* Adjust font size for very small screens */
+    max-width: 100%; /* Make the heading fully responsive */
+  }
+
+  .drop {
+    padding: 10px;
+  }
+
+  .drop ul {
+    width: 100%; /* Ensure the lists take full width */
+  }
+  .dropdown-container{
+    padding-right: 20px;
+  }
+  .drop ul li {
+    font-size: 14px; /* Ensure text is readable */
+    padding: 12px; /* Adjust padding for mobile */
+  }
+}
+
+@media (max-width: 320px) {
+  .d7 {
+    font-size: 14px; /* Adjust font size for very small screens */
+    padding: 10px; /* Adjust padding for very small screens */
+  }
+
+  .drop ul li {
+    font-size: 12px; /* Further reduce font size for small screens */
+  }
+}
