@@ -4,11 +4,12 @@ import Navbar from './component/navbar/nav'
 // import Footer from './components/footer/fo';
 import Home from "./component/pages/Home/home";
 import About from "./component/pages/about/about";
-import Websiteowner from "./component/pages/websiteowner/websiteowner";
+import Owner from './component/pages/owner/owner'
 import SomeStoveIknowAbout from "./component/pages/somestoveiknowabout/somestoveiknowabout";
-import Dropdown from "./component/pages/dropdown/dropdown";
-import Dropdown1 from "./component/pages/dropdown1/dropdown1";
+import Drop1 from './component/pages/drop1/dr';
+import Drop2 from './component/pages/drop2/dro';
 import Somenews from "./component/pages/somenews/somenews";
+import Footer from "./component/footer/footer";
 
 function App() {
   return (
@@ -18,14 +19,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Websiteowner />} />
-        <Route path="/contact" element={<SomeStoveIknowAbout />} />
-        <Route path="/D" element={<Dropdown/>} />
-        <Route path="/D1" element={<Dropdown1/>} />
-    
-        <Route path="/contact" element={<Somenews />} />
+        <Route path="/src/component/pages/owner/owner.js" element={<Owner/>} /> {/* Fixed route path */}
+        <Route path="/src/component/pages/somestoveiknowabout/somestoveiknowabout.js" element={<SomeStoveIknowAbout />} /> {/* Changed route to avoid conflict */}
+        <Route path="/src/component/pages/drop1/dr.js" element={<Drop1/>} /> {/* Changed route to avoid conflict */}
+        <Route path="/src/component/pages/drop2/dro.js" element={<Drop2 />} /> {/* Changed route to avoid conflict */}
+        <Route path="/somenews" element={<Somenews />} /> {/* Changed route to avoid conflict */}
       </Routes>
-      {/* <Footer /> */}
+      
+      <Footer />
     </Router>
   );
 }

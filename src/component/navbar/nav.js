@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import img from './ownerImg-removebg-preview (1).png';
+import imsg from './im-removebg-preview.png'
 import "./nav.css"; // CSS for styling
 
 const NavbarWithRope = () => {
@@ -28,8 +29,8 @@ const NavbarWithRope = () => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About The Owner</Link></li>
           <li><Link to="/projects">The Plans for a Day</Link></li>
-          <li><Link to="/contact">The Website Owner</Link></li>
-          <li><Link to="/contact">Some Stove I Know About</Link></li>
+          <li><Link to="/src/component/pages/owner/owner.js">The Website Owner</Link></li>
+          <li><Link to="/src/component/pages/somestoveiknowabout/somestoveiknowabout.js">Some Stove I Know About</Link></li>
         </ul>
       </nav>
 
@@ -41,7 +42,7 @@ const NavbarWithRope = () => {
           ref={ropeRef}
         >
           <img
-            src='./im-removebg-preview.png' // Replace with your image URL
+            src={imsg} // Replace with your image URL
             alt="Rope"
             className="rope-image"
             ref={imageRef}
@@ -58,8 +59,8 @@ const NavbarWithRope = () => {
           transform: `translateY(${dropdownVisible ? 0 : -10}px)`, // Smooth transition
         }}
       >
-        <li className="dropdown-item"><Link to="/D">Dropdown</Link></li>
-        <li className="dropdown-item"><Link to="/D1">Dropdown</Link></li>
+        <li className="dropdown-item"><Link to="/src/component/pages/drop1/dr.js">Dropdown</Link></li>
+        <li className="dropdown-item"><Link to="/src/component/pages/drop2/dro.js">Dropdown</Link></li>
       </div>
     </div>
   );

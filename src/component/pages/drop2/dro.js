@@ -1,12 +1,15 @@
-import React from 'react';
-import './dropdown1.css';
+import React from 'react'
+import './dro.css'
 
-function Dropdown1() {
+function dro() {
   return (
-    <div className="dropdown-container">
-      <h3 className="d7">Drop Down</h3>
-      <div className="drop">
-        <ul>
+   
+    <div>
+    
+  <h3 className='d7' >Drop Down</h3>
+<div className="drop">
+       
+<ul>
           <li>What windows looked like in '96</li>
           <li>Make a website</li>
           <li>Some things I learned and know of</li>
@@ -39,9 +42,13 @@ function Dropdown1() {
           <li>The TV today plus it in my day</li>
           <li>TV show I like</li>
         </ul>
+     
+      
+        
+        </div>
       </div>
-    </div>
-  );
+    
+  )
 }
 
-export default Dropdown1;
+export default dro;

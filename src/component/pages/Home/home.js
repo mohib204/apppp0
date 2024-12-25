@@ -26,9 +26,7 @@ function Home() {
         </p>
       </section>
 
-      <footer className='fo'>
-        © 2024 Rich's Homepage
-      </footer>
+    
     </div>
   );
 }
